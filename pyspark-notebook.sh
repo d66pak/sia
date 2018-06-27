@@ -20,9 +20,9 @@ fi
 export PYSPARK_DRIVER_PYTHON=ipython
 export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
 
-pyspark \
-  --master spark://deepakt-OptiPlex-9020:7077 \
-  --driver-memory 2g 
 #pyspark \
-#  --master local[*] \
+#  --master spark://deepakt-OptiPlex-9020:7077 \
 #  --driver-memory 2g 
+pyspark \
+  --master local[*] \
+  --driver-memory 2g 
